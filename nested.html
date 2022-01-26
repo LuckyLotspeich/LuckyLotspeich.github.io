@@ -12,6 +12,15 @@
         header, main, footer{
             background-color: #a63d74;
         }
+        main{
+            border-radius: 30px;
+            border: 3px solid white;
+            margin-bottom: 20px;
+        }
+        footer{
+            border-radius:30px;
+            border: 3px solid white;
+        }
         #nav-container {
             border: 3px solid white;
             border-radius: 30px;
@@ -38,6 +47,20 @@
             cursor: pointer;
             color: white;
         }
+        #list-container{
+            margin-right:5em;
+            margin-left:5em;
+        }
+        #kaden-article{
+            margin-left: 5em;
+            margin-right: 5em;
+        }
+        #elephant-container{
+            text-align:center;
+        }
+        #elephant-img{
+            border-radius:30px;
+        }
     </style>
 </head>
 
@@ -61,24 +84,24 @@
     <main>
         <div>
             <!--Kaden Section-->
-            <section>
-                <div>
-                    <h1>List of Stuff</h1>
-                    <ul>
-                        <li>Washing Machine</li>
-                        <li>Candy Wrapper</li>
-                        <li>Flowers</li>
-                        <li>Sofa</li>
-                        <li>Apple</li>
-                        <li>Piano</li>
-                        <li>Packing Peanuts</li>
-                        <li>Eye Liner</li>
-                        <li>Paint Brush</li>
-                        <li>Teddies</li>
+            <section id="kaden-section">
+                <div id="list-container">
+                    <h1 id="list-heading">List of Stuff</h1>
+                    <ul id="list">
+                        <li id="list-item">Washing Machine</li>
+                        <li id="list-item">Candy Wrapper</li>
+                        <li id="list-item">Flowers</li>
+                        <li id="list-item">Sofa</li>
+                        <li id="list-item">Apple</li>
+                        <li id="list-item">Piano</li>
+                        <li id="list-item">Packing Peanuts</li>
+                        <li id="list-item">Eye Liner</li>
+                        <li id="list-item">Paint Brush</li>
+                        <li id="list-item">Teddies</li>
                     </ul>
                 </div>
                 <div>
-                    <article>
+                    <article id="kaden-article">
                         <h2>Two Forgetful Uncles Hopping to the Beat</h2>
                         <h4>A Short Story by <strong>Kaden Baratcart</strong></h4>
                         <p>John Torrance looked at the enchanted book in his hands and felt sneezy.
@@ -126,8 +149,8 @@
                             THE END</p>
                     </article>
                 </div>
-                <div>
-                    <a href="https://ibb.co/P6g197k"><img src="https://i.ibb.co/879PdWk/elephant.png" alt="elephant"
+                <div id="elephant-container">
+                    <a href="https://ibb.co/P6g197k"><img id="elephant-img" src="https://i.ibb.co/879PdWk/elephant.png" alt="elephant"
                             border="0"></a>
                 </div>
             </section>
