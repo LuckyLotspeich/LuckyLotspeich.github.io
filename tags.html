@@ -4,7 +4,8 @@
 <head>
     <style>
         body {
-            background-color: #02153C;
+            /*background-color: #02153C;*/
+            background-color: black;
         }
 
         #welcome-img {
@@ -14,13 +15,14 @@
         #img-container {
             text-align: center;
             width: auto;
+            padding-bottom:15px;
         }
 
         #form-container {
             text-align: center;
             padding-top: 20px;
             padding-bottom: 20px;
-            border: 3px solid white;
+            border: 2px solid white;
             border-radius: 10px;
         }
 
@@ -46,7 +48,7 @@
         }
 
         #nav-container {
-            border: 3px solid white;
+            border: 2px solid white;
             border-radius: 30px;
             margin: 20px 0 20px 0;
         }
@@ -75,28 +77,31 @@
 </head>
 
 <body>
+    <header>
+        <div id="nav-container">
+            <nav id="nav-bar" name="tag4">
+                <ul name="tag5">
+                    <li name="tag6" id="nav-link"><a name="tag6" href=index.html>Home</a></li>
+                    <li id="nav-link"><a href=nested.html>Nested examples</a></li>
+                    <li id="nav-link"><a href=attributes.html>Attribute examples</a></li>
+                    <li id="nav-link"><a href=tags.html>Tag examples</a></li>
+                    <li id="nav-link"><a href=kaden.html>Kaden</a></li>
+                    <li id="nav-link"><a href=nick.html>Nick</a></li>
+                    <li id="nav-link"><a href=aria.html>Aria</a></li>
+                    <li id="nav-link"><a href=akiah.html>Akiah</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <div>
         <!--Kaden Tag Section-->
         <section id="kaden-section" name="tag1">
+            <div id="img-container">
+                <img name="tag3" id="welcome-img" src="https://i.ibb.co/tpLZ1RL/welcome.png" alt="welcome"
+                    border="0">
+            </div>
             <div name="tag2">
-                <div id="img-container">
-                    <img name="tag3" id="welcome-img" src="https://i.ibb.co/tpLZ1RL/welcome.png" alt="welcome"
-                        border="0">
-                </div>
-                <div id="nav-container">
-                    <nav id="nav-bar" name="tag4">
-                        <ul name="tag5">
-                            <li name="tag6" id="nav-link"><a name="tag6" href=index.html>Home</a></li>
-                            <li id="nav-link"><a href=nested.html>Nested examples</a></li>
-                            <li id="nav-link"><a href=attributes.html>Attribute examples</a></li>
-                            <li id="nav-link"><a href=tags.html>Tag examples</a></li>
-                            <li id="nav-link"><a href=kaden.html>Kaden</a></li>
-                            <li id="nav-link"><a href=nick.html>Nick</a></li>
-                            <li id="nav-link"><a href=aria.html>Aria</a></li>
-                            <li id="nav-link"><a href=akiah.html>Akiah</a></li>
-                        </ul>
-                    </nav>
-                </div>
+                
                 <div id="form-container">
                     <p name="tag7" id="form-description">This is our tags example page. In this page we will show
                         examples of some
@@ -114,7 +119,7 @@
                         </label>
 
                         <label>
-                            Comments: <textarea id="kaden-textarea" placeholder="Suggestions and Comments"></textarea>
+                            Comments: <textarea style="margin:auto;" id="kaden-textarea" placeholder="Suggestions and Comments"></textarea>
                         </label>
                         <button id="submit" type="submit">Submit</button>
                     </form>
