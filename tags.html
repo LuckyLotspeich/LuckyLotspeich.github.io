@@ -15,7 +15,7 @@
         #img-container {
             text-align: center;
             width: auto;
-            padding-bottom:15px;
+            padding-bottom: 15px;
         }
 
         #form-container {
@@ -47,61 +47,58 @@
             display: inline;
         }
 
-        #nav-container {
+        .nav-container {
+            background-color: black;
+            overflow: hidden;
             border: 2px solid white;
             border-radius: 30px;
-            margin: 20px 0 20px 0;
-        }
-
-        #nav-bar {
+            margin: 10px;
             display: flex;
             justify-content: center;
-            margin-right: 2em;
-            margin-left: 2em;
+        }
+
+        .nav-container a {
+            float: left;
+            color: #f2f2f2;
             text-align: center;
-        }
-
-        #nav-link {
-            list-style-type: none;
-            display: inline;
-            padding: 20px;
-        }
-
-        a {
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding: 14px 16px;
             text-decoration: none;
-            cursor: pointer;
-            color: white;
+            font-size: 17px;
+        }
+
+        .nav-container a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .nav-container a.active {
+            background-color: white;
+            color: black;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <div id="nav-container">
-            <nav id="nav-bar" name="tag4">
-                <ul name="tag5">
-                    <li name="tag6" id="nav-link"><a name="tag6" href=index.html>Home</a></li>
-                    <li id="nav-link"><a href=nested.html>Nested examples</a></li>
-                    <li id="nav-link"><a href=attributes.html>Attribute examples</a></li>
-                    <li id="nav-link"><a href=tags.html>Tag examples</a></li>
-                    <li id="nav-link"><a href=kaden.html>Kaden</a></li>
-                    <li id="nav-link"><a href=nick.html>Nick</a></li>
-                    <li id="nav-link"><a href=aria.html>Aria</a></li>
-                    <li id="nav-link"><a href=akiah.html>Akiah</a></li>
-                </ul>
-            </nav>
+        <div class="nav-container">
+            <a href="index.html">Home</a>
+            <a href="kaden.html">Kaden</a>
+            <a href="nick.html">Nick</a>
+            <a href="akiah.html">Akiah</a>
+            <a href="aria.html">Aria</a>
+            <a class="active" href="tags.html">Tags</a>
+            <a href="nested.html">Nested</a>
+            <a href="attributes.html">Attributes</a>
         </div>
     </header>
     <div>
         <!--Kaden Tag Section-->
         <section id="kaden-section" name="tag1">
             <div id="img-container">
-                <img name="tag3" id="welcome-img" src="https://i.ibb.co/tpLZ1RL/welcome.png" alt="welcome"
-                    border="0">
+                <img name="tag3" id="welcome-img" src="https://i.ibb.co/tpLZ1RL/welcome.png" alt="welcome" border="0">
             </div>
             <div name="tag2">
-                
+
                 <div id="form-container">
                     <p name="tag7" id="form-description">This is our tags example page. In this page we will show
                         examples of some
@@ -119,7 +116,8 @@
                         </label>
 
                         <label>
-                            Comments: <textarea style="margin:auto;" id="kaden-textarea" placeholder="Suggestions and Comments"></textarea>
+                            Comments: <textarea style="margin:auto;" id="kaden-textarea"
+                                placeholder="Suggestions and Comments"></textarea>
                         </label>
                         <button id="submit" type="submit">Submit</button>
                     </form>

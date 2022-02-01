@@ -8,7 +8,6 @@
     }
 
     .kaden-div {
-      margin: 10px;
       background-color: #35798d;
       border: 5px solid #e3b850;
       border-radius: 30px;
@@ -35,6 +34,9 @@
       width: 50%;
       max-width: 250px;
       border: 3px solid #e3b850;
+      animation-name: image;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
     }
 
     .kaden-description-div {
@@ -47,7 +49,7 @@
       font-family: 'Courier New', Courier, monospace;
     }
 
-    .kaden-hw-one {
+    .kaden-hw {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -65,50 +67,62 @@
       height: 100px;
     }
 
-    #nav-container {
+    .nav-container {
+      background-color: black;
+      overflow: hidden;
       border: 2px solid white;
       border-radius: 30px;
-      margin: 20px 0 20px 0;
-    }
-
-    #nav-bar {
+      margin: 10px;
       display: flex;
       justify-content: center;
-      margin-right: 2em;
-      margin-left: 2em;
+    }
+
+    .nav-container a {
+      float: left;
+      color: #f2f2f2;
       text-align: center;
-    }
-
-    #nav-link {
-      list-style-type: none;
-      display: inline;
-      padding: 20px;
-    }
-
-    a {
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      padding: 14px 16px;
       text-decoration: none;
-      cursor: pointer;
-      color: white;
+      font-size: 17px;
+    }
+
+    .nav-container a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .nav-container a.active {
+      background-color: white;
+      color: black;
+    }
+
+    @keyframes image {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(.85);
+      }
+
+      100% {
+        transform: scale(1);
+      }
     }
   </style>
 </head>
 
 <body>
   <header>
-    <div id="nav-container">
-      <nav id="nav-bar">
-        <ul>
-          <li id="nav-link"><a href=index.html>Home</a></li>
-          <li id="nav-link"><a href=nested.html>Nested examples</a></li>
-          <li id="nav-link"><a href=attributes.html>Attribute examples</a></li>
-          <li id="nav-link"><a href=tags.html>Tag examples</a></li>
-          <li id="nav-link"><a href=kaden.html>Kaden</a></li>
-          <li id="nav-link"><a href=nick.html>Nick</a></li>
-          <li id="nav-link"><a href=aria.html>Aria</a></li>
-          <li id="nav-link"><a href=akiah.html>Akiah</a></li>
-        </ul>
-      </nav>
+    <div class="nav-container">
+      <a href="index.html">Home</a>
+      <a class="active" href="kaden.html">Kaden</a>
+      <a href="nick.html">Nick</a>
+      <a href="akiah.html">Akiah</a>
+      <a href="aria.html">Aria</a>
+      <a href="tags.html">Tags</a>
+      <a href="nested.html">Nested</a>
+      <a href="attributes.html">Attributes</a>
     </div>
   </header>
   <!--Kadens Section-->
@@ -129,9 +143,14 @@
         code, lift, and get outdoors!
       </p>
     </div>
-    <div class="kaden-hw-one">
+    <div class="kaden-hw">
       <h3>Homework Week1: </h3>
       <img class="kaden-hw-img" src="https://i.ibb.co/nQ5WZ11/GIMM300-HW1.png" alt="Kadens week one homework">
+      </img>
+    </div>
+    <div class="kaden-hw">
+      <h3>Homework Week2: </h3>
+      <img class="kaden-hw-img" src="https://i.ibb.co/jv8L4r1/gimm300-HW2.png" alt="Kadens week two homework">
       </img>
     </div>
   </div>
