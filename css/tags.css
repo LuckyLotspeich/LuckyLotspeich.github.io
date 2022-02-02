@@ -1,0 +1,60 @@
+/** TAGS PAGE **/
+
+#welcome-img {
+    border-radius;
+}
+
+#form-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+#akiah_section {
+    padding:20px;
+    margin:auto;
+    border:2px solid white;
+    border-radius:10px;
+}
+
+p, li {
+    color:white;
+    padding:5px;
+}
+
+li {
+    padding-left:30px;
+}
+
+strong {
+    font-weight:bold;
+}
+
+sup {
+    vertical-align:super;
+}
+
+code {
+    font-family: monospace;
+    background-color:white;
+}
+
+form label {
+    display: block;
+    text-align: center;
+    padding: 4px;
+}
+
+form input {
+    display: inline;
+}
+
+#form-description {
+    margin: 0 2em 0 2em;
+    padding-bottom: 15px;
+}
+
+form textarea {
+    display: inline;
+}
