@@ -4,119 +4,16 @@
 <head>
   <title>Kaden Baratcart</title>
   <!-- css -->
-  <style>
-  
-    body {
-      background-color: black;
-    }
+  <!--link rel="stylesheet" href="css/reset.css"-->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/kaden.css">
 
-    .kaden-div {
-      background-color: #35798d;
-      border: 5px solid #e3b850;
-      border-radius: 30px;
-    }
-
-    .kaden-personal {
-      margin-bottom: 20px;
-    }
-
-    .kaden-name {
-      text-align: center;
-      font-family: 'Courier New', Courier, monospace;
-    }
-
-    .kaden-contact {
-      text-align: center;
-      font-family: 'Courier New', Courier, monospace;
-      margin: 5px;
-    }
-
-    .kaden-img {
-      display: block;
-      margin: auto;
-      width: 50%;
-      max-width: 250px;
-      border: 3px solid #e3b850;
-      animation-name: image;
-      animation-duration: 3s;
-      animation-iteration-count: infinite;
-    }
-
-    .kaden-description-div {
-      margin-left: 2em;
-      margin-right: 2em;
-    }
-
-    .kaden-description {
-      font-size: 18px;
-      font-family: 'Courier New', Courier, monospace;
-    }
-
-    .kaden-hw {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-left: 2em;
-      margin-right: 2em;
-    }
-
-    .kaden-hw-img {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-left: 20px;
-      padding-bottom: 15px;
-      width: 100px;
-      height: 100px;
-    }
-
-    .nav-container {
-      background-color: black;
-      overflow: hidden;
-      border: 2px solid white;
-      border-radius: 30px;
-      margin: 10px;
-      display: flex;
-      justify-content: center;
-    }
-
-    .nav-container a {
-      float: left;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-    }
-
-    .nav-container a:hover {
-      background-color: #ddd;
-      color: black;
-    }
-
-    .nav-container a.active {
-      background-color: white;
-      color: black;
-    }
-
-    @keyframes image {
-      0% {
-        transform: scale(1);
-      }
-
-      50% {
-        transform: scale(.85);
-      }
-
-      100% {
-        transform: scale(1);
-      }
-    }
-  </style>
 </head>
 
 <body>
+  <!--Header Section-->
   <header>
+    <!-- Navigation Bar -->
     <div class="nav-container">
       <a href="index.html">Home</a>
       <a class="active" href="kaden.html">Kaden</a>
@@ -127,36 +24,67 @@
       <a href="nested.html">Nested</a>
       <a href="attributes.html">Attributes</a>
     </div>
+    <!-- End of Navigation Bar-->
   </header>
-  <!--Kadens Section-->
-  <div class="kaden-div">
-    <div class="kaden-personal">
-      <h1 class="kaden-name">Kaden Baratcart</h1>
-      <h4 class="kaden-contact">kadenbaratcart@u.boisestate.edu</h4>
-      <h4 class="kaden-contact">208-850-8951</h4>
-      <h4 class="kaden-contact"><a href="https://kbart1999.github.io/">kbart1999.github.io</a></h4>
-    </div>
-    <img class="kaden-img" src="https://pkimgcdn.peekyou.com/a572a1b5337f876b87d54e73cf715fd7.jpeg"
-      alt="Kaden Profile Pic" style="border-radius: 70%">
-    </img>
-    <div class="kaden-description-div">
-      <p class="kaden-description">Hello my name is
-        Kaden Baratcart and I am a Senior in the GIMM
-        program. I live in boise, Idaho and love a to
-        code, lift, and get outdoors!
-      </p>
-    </div>
-    <div class="kaden-hw">
-      <h3>Homework Week1: </h3>
-      <img class="kaden-hw-img" src="https://i.ibb.co/nQ5WZ11/GIMM300-HW1.png" alt="Kadens week one homework">
+  <!--End of Header Section-->
+
+  <!--Main Section-->
+  <main class="main">
+
+    <!--Kadens Section-->
+    <div class="main-container">
+
+      <!-- Contact Information -->
+      <div class="contactInfo-container">
+        <h1 id="kaden-name">Kaden Baratcart</h1>
+        <h4 class="contact-link">kadenbaratcart@u.boisestate.edu</h4>
+        <h4 class="contact-link">208-850-8951</h4>
+        <h4 class="contact-link"><a href="https://www.linkedin.com/feed/">kbart1999.linkedin.com</a></h4>
+        <h4 class="contact-link"><a href="https://www.facebook.com/kaden.baratcart/">kbart1999.facebook.com</a></h4>
+        <h4 class="contact-link"><a href="https://kbart1999.github.io/">kbart1999.github.io</a></h4>
+      </div>
+      <!-- End of Contact Information -->
+
+      <!-- Profile Picture of Kaden -->
+      <img class="kaden-img" src="https://pkimgcdn.peekyou.com/a572a1b5337f876b87d54e73cf715fd7.jpeg"
+        alt="Kaden Profile Pic" style="border-radius: 70%">
       </img>
+      <!-- End of Profile Picture of Kaden -->
+
+      <!-- Personal Statement Section -->
+      <div class="description-container">
+        <p id="description">Hello my name is
+          Kaden Baratcart and I am a Senior in the GIMM
+          program. I live in boise, Idaho and love a to
+          code, lift, and get outdoors!
+        </p>
+      </div>
+      <!-- End of Personal Statement Section -->
+
+      <!-- Homework Section -->
+      <div class="hw-container">
+        <h3 class="week-heading">Homework Week1: </h3>
+        <img class="hw-img" src="https://i.ibb.co/nQ5WZ11/GIMM300-HW1.png" alt="Kadens week one homework">
+        </img>
+      </div>
+      <div class="hw-container">
+        <h3 class="week-heading">Homework Week2: </h3>
+        <img class="hw-img" src="https://i.ibb.co/jv8L4r1/gimm300-HW2.png" alt="Kadens week two homework">
+        </img>
+      </div>
+      <!-- End of Homework Section -->
+
     </div>
-    <div class="kaden-hw">
-      <h3>Homework Week2: </h3>
-      <img class="kaden-hw-img" src="https://i.ibb.co/jv8L4r1/gimm300-HW2.png" alt="Kadens week two homework">
-      </img>
-    </div>
-  </div>
+    <!-- End of Kaden Section -->
+
+  </main>
+  <!-- End of Main Section -->
+
+  <!-- Footer Section -->
+  <footer>
+
+  </footer>
+  <!-- End of Footer Section -->
 
 </body>
 
