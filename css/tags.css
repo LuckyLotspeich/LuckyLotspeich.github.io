@@ -16,6 +16,13 @@
     border-radius:10px;
 }
 
+#aria_section {
+    padding:20px;
+    margin:auto;
+    border:2px solid white;
+    border-radius:10px;
+}
+
 p, li {
     color:white;
     padding:5px;
@@ -55,4 +62,9 @@ form input {
 
 form textarea {
     display: inline;
+}
+
+mark { 
+  background-color: DarkCyan;
+  color: white;
 }
