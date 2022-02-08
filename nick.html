@@ -1,53 +1,16 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <style>
-        body {
-            background-color: black;
-        }
-
-        .nick-div {
-            background-color: darkcyan;
-        }
-
-        .nick-header {
-            text-align: center;
-        }
-
-        .nav-container {
-            background-color: black;
-            overflow: hidden;
-            border: 2px solid white;
-            border-radius: 30px;
-            margin: 10px;
-            display: flex;
-            justify-content: center;
-        }
-
-        .nav-container a {
-            float: left;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-        }
-
-        .nav-container a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        .nav-container a.active {
-            background-color: white;
-            color: black;
-        }
-    </style>
+<head>\
+    <title>Nick Lotspeich</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nick.css">
 </head>
 
 <body>
     <header>
+        <!-- Navigation Bar -->
         <div class="nav-container">
             <a href="index.html">Home</a>
             <a href="kaden.html">Kaden</a>
@@ -58,23 +21,25 @@
             <a href="nested.html">Nested</a>
             <a href="attributes.html">Attributes</a>
         </div>
+        <!-- End of Navigation Bar -->
     </header>
     <!-- Nick's Section -->
-    <div class=nick-div>
-        <div class=nick-header>
+    <main class="background">
+        <div class="nick-header">
             <h1>Nick Lotspeich</h1>
             <h4>nicklotspeich@u.boisestate.edu</h4>
-            <h4>208-789-3829</h4>
         </div>
-        <div>
-            <h3>
-                Hello! My name is Nick Lotspeich and I just started in the GIMM program. I have a background in Math and
-                Physics with a focus on Astronomy Research. I love to jog, play videogames and cook!
-            </h3>
+        <div class="nick-body">
+            <p>
+                Hello! My name is Nick Lotspeich and I just started in the GIMM program. I have a background in math and
+                physics with a focus on astronomy research. I love to jog, play videogames, and cook! Here is an image I took overnight while studying in Mayhill, New Mexico.
+            </p>
+        </div>       
+        <div class="star-trails">
+            <img src="https://i.imgur.com/xCUzUse.jpeg" alt="Star Trails">
+            </img>
         </div>
-        <img src="https://i.imgur.com/xCUzUse.jpeg">
-        </img>
-    </div>
+    </main>
 </body>
 
 </html>
