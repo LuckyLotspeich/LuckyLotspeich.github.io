@@ -2,80 +2,10 @@
 <html>
 
 <head>
-    <style>
-        body {
-            /*background-color: #02153C;*/
-            background-color: black;
-        }
-
-        #welcome-img {
-            border-radius: 50px;
-        }
-
-        #img-container {
-            text-align: center;
-            width: auto;
-            padding-bottom: 15px;
-        }
-
-        #form-container {
-            text-align: center;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            border: 2px solid white;
-            border-radius: 10px;
-        }
-
-        form label {
-            color: white;
-            display: block;
-            text-align: center;
-            padding: 4px;
-        }
-
-        form input {
-            display: inline;
-        }
-
-        #form-description {
-            margin: 0 2em 0 2em;
-            color: white;
-            padding-bottom: 15px;
-        }
-
-        form textarea {
-            display: inline;
-        }
-
-        .nav-container {
-            background-color: black;
-            overflow: hidden;
-            border: 2px solid white;
-            border-radius: 30px;
-            margin: 10px;
-            display: flex;
-            justify-content: center;
-        }
-
-        .nav-container a {
-            float: left;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-        }
-
-        .nav-container a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        .nav-container a.active {
-            background-color: white;
-            color: black;
-        }
-    </style>
+  <!-- css -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/tags.css">
 </head>
 
 <body>
@@ -91,7 +21,10 @@
             <a href="attributes.html">Attributes</a>
         </div>
     </header>
+
     <div>
+        
+
         <!--Kaden Tag Section-->
         <section id="kaden-section" name="tag1">
             <div id="img-container">
@@ -125,6 +58,72 @@
             </div>
         </section>
         <!--End Kaden Section-->
+
+        <!--Akiah Tag Section-->
+        <section id="akiah_section" name="ak_tag_1">
+            <p name="ak_tag_2">this is a paragraph</p>
+            <br>
+            <p name="ak_tag_3">
+                this second paragraph is after a break. the tag for break is <strong name="ak_tag_4">&lsaquo;br&rsaquo;</strong>. 
+                &lsaquo;br&rsaquo; was bolded with the &lsaquo;strong&rsaquo; tag.
+            </p>
+            <code name="ak_tag_5">
+                this section is treated as code. There isn't really a difference from regular text, other than that css can see it seperately.
+            </code>
+            <p>here is a list of a few more formatting styles:</p>
+            <ol name="ak_tag_6">
+                <li name="ak_tag_7">&lsaquo;s&rsaquo; for <s name="ak_tag_8">strikethrough</s></li>
+                <li>&lsaquo;u&rsaquo; for <u name="ak_tag_9">unarticulated</u></li>
+                <li>&lsaquo;sup&rsaquo; for <sup name="ak_tag_10">superscript</sup> (this one needs css to work, though)</li>
+            </ol>
+        </section>
+        <!--End Akiah Section-->
+
+        <!--Nick Tag Section-->
+        <section id="nick_section" name="nick_tag_1">
+            <div name="nick_tag_2">
+                <h6 name="nick_tag_3">
+                    This is the start of Nick's tag section. 
+                </h6>
+                <br name="nick_tag_4">
+                <p>
+                    <strong name="nick_tag_5">This is strong text!</strong>  <s name="nick_tag_6">And this has a line through it.</s>
+                </p>
+                <button name="nick_tag_7">Here is a button!</button>
+                <p> This button doesn't do anything... Here is an inline frame of a map of the campus.</p>
+                <iframe src="https://maps.boisestate.edu/?id=715#!ct/21174,8947,8943" title="Map of Boise State Campus" name="nick_tag_8"></iframe>
+                <p> I am keeping this map small so it doesn't take up a large part of the screen, but if you want to see it, 
+                    <a href="https://maps.boisestate.edu/?id=715#!ct/21174,8947,8943" target="blank" name="nick_tag_9">here</a> is a link to see it in another tab! Some buildings you can find on campus are:
+                </p>
+                <ul name="nick_tag_10">
+                    <li>The Albertsons Library</li>
+                    <li>The Student Union Building</li>
+                    <li>Lincoln Garage</li>
+                </ul>
+            </div>
+
+        </section>
+        <!--End Nick Section-->
+
+        <!--Aria Tag Section-->
+        <section id="aria_section" name="aria_tag_1">
+        <div name="aria_tag_2">
+            <p name="aria_tag_3">Below is a blockquote. Yes, it's a quote from Seraphine in League of Legends, don't hurt me. <strong name="aria_tag_4">(incoming salt)</strong> I enjoy playing her cause shes FUN. And I like this quote. <strong>(salt ended)</strong></p>
+            <br name="aria_tag_5">
+
+            <blockquote cite="https://leagueoflegends.fandom.com/wiki/Seraphine/LoL/Audio#K/DA_ALL_OUT" name="aria_tag_6">
+            <p>Don't worry starry eyes. Look up towards the sky, see yourself, and shine.</p>
+            </blockquote>
+            <br>
+            <h6 name="aria_tag_7" style="color:white;">This is a tiny h6 heading for the unordered list below</h6>
+            <ul name="aria_tag_8">
+                <li name="aria_tag_9">This is a list item</li>
+                <li>This is another list item</li>
+            </ul>
+            <mark name="aria_tag_10">Have some highlighted text while you're at it!</mark>
+        </div>
+        </section>
+        <!--End Aria Section-->
     </div>
 </body>
 

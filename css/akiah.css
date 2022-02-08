@@ -79,7 +79,10 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    overflow: hidden;
-        
+    overflow: hidden;    
+}
+
+#mugshot img {
+    opacity:0;
 }
 
