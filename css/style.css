@@ -1,39 +1,168 @@
-body {
-    background-color: black;
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;0,900;1,300&display=swap');
+@font-face {
+    font-family: 'audreybold';
+    src: url('../fonts/audrey-bold-webfont.woff2') format('woff2'),
+         url('../fonts/audrey-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-/** NAV BAR **/
+/*  VARIABLES */
+:root {
+    /* colors */
+    --dark : #2C3531;
+    --blue : #116466;
+    --tanD : #D9B08C;
+    --tanL : #FFCB9A;
+    --lite : #D1E8E2;
 
-.nav-container {
+    --text-light : var(--lite);
+    --text-dark : var(--base);
+
+    --base : var(--dark);
+    --card-base : var(--lite);
+    --border : var(--tanD);
+    --nav-base : var(--blue);
+    --nav-active : var(--lite);
+    --nav-hover : var(--tanD);
+
+    --grad : linear-gradient(var(--lite), var(--tanL));
+    
+    /* sizes */
+    --img-size : 170px;
+    --card-min-size : 100px;
+    --std-section-max-width : 30vw;
+    --std-section-min-width : 400px;
+    --std-body-text-max-width : 250px;
+
+    --border-radius : 10px;
+    --std-padding : 5px;
+    --std-margin : 5px;
+
+    --nav-height : 40px;
+    --nav-padding : 12px;
+
+    --nav-font-size : 1em;
+    --title-font-size : 2em;
+    --section-header-font-size : 1.15em;
+    --line-height : 1.4em;
+
+    /* fonts */
+    --audrey : 'audreybold', serif;
+    --titillium : 'titillium', sans-serif;
+}
+
+/* GENERAL */
+body {
+    margin-top: var(--nav-height);
+    background-color: var(--base);
+    color: var(--text-light);
+}
+
+h2 {
+    font-family: var(--titillium);
+    font-weight:bold;
+    text-align:center;
+    padding: var(--std-padding);
+    margin: var(--std-margin);
+    font-size: var(--section-header-font-size);
+}
+
+.container {
+    display:flex;
+    justify-content:center;
+    align-items:top;
+    flex-wrap:wrap;
+}
+
+.section {
+    margin: var(--std-margin);
+    padding: var(--std-padding);
+    display: inline-block;
+
+    max-width: var(--std-section-max-width);
+    min-width: var(--std-section-min-width);
+}
+
+.card {
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border);
+    background-color: var(--card-base);
+    color: var(--text-dark);
+}
+
+.section-content {
+    display:inline-block;
+    min-height: var(--card-min-size);
+    min-width: var(--card-min-size);
+    padding: var(--std-padding);
+    margin: var(--std-margin);
+}
+
+.body-text {
+    max-width: var(--std-body-text-max-width);
+    font-family: var(--titillium);
+    line-height: var(--line-height);
+    padding: var(--std-padding);
+    margin: var(--std-margin);
+}
+
+#name-text {
+    font-family: var(--audrey);
+    font-size: var(--title-font-size);
+    
+    letter-spacing: 8px;
+    padding: var(--std-padding);
+    margin: var(--std-margin);
+}
+
+/* NAV BAR */
+#nav {
+    background-color: var(--nav-base);
     position:fixed;
     z-index:10;
+    height: var(--nav-height);
+    max-width:100%;
     width:100%;
     top:0px;
-    margin:auto;
-    background-color: black;
-    overflow: hidden;
-    margin: 0px;
-    display:flex;
-    justify-content: center;
 }
 
-.nav-container a {
+#nav a {
+    color: var(--text-light);
     float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
+    padding: var(--nav-padding);
     text-decoration: none;
-    font-size: 17px;
+    font-size: var(--nav-font-size);
+    font-family: var(--titillium);
+    font-weight: bold;
 }
 
-.nav-container a:hover {
-    background-color: #ddd;
-    color: black;
+#nav a:hover {
+    background-color: var(--nav-hover);
+    color: var(--text-dark);
 }
 
-.nav-container a.active {
-    background-color: white;
-    color: black;
+#nav a.active {
+    background-color: var(--nav-active);
+    color: var(--dark);
 }
 
+/* CROP-CONTENTS, scales as well */
+.crop-contents {
+    width: var(--img-size);
+    height: var(--img-size);
 
+    position:relative;
+    overflow:hidden;
+    border-radius:50%;
+    text-align:center;
+
+    margin: var(--margin-default);
+}
+
+.crop-contents img {
+    height:100%;
+    margin-left: -50%;
+    margin-right: -50%;
+}
