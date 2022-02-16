@@ -36,6 +36,7 @@ img {
   overflow: hidden;
   width: 100%;
   padding-top: 56.25%;
+
 }
 .responsive-iframe {
   position: absolute;
@@ -44,7 +45,7 @@ img {
   bottom: 0;
   right: 0;
   width: 50%;
-  height: 50%;
+  height: 20%;
 }
 .content {
 
