@@ -4,87 +4,57 @@
 <head>
     <title>Aria</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/aria.css">
-
-    <style>
-        body {
-            background-color: black;
-        }
-
-        .nav-container {
-            background-color: black;
-            overflow: hidden;
-            border: 2px solid white;
-            border-radius: 30px;
-            margin: 10px;
-            display: flex;
-            justify-content: center;
-        }
-
-        .nav-container a {
-            float: left;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-        }
-
-        .nav-container a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        .nav-container a.active {
-            background-color: white;
-            color: black;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
-        <div class="nav-container">
+        <div id="nav" class="container">
             <a href="index.html">Home</a>
             <a href="kaden.html">Kaden</a>
             <a href="nick.html">Nick</a>
             <a href="akiah.html">Akiah</a>
             <a class="active" href="aria.html">Aria</a>
-            <a href="tags.html">Tags</a>
-            <a href="nested.html">Nested</a>
-            <a href="attributes.html">Attributes</a>
         </div>
     </header>
 
     <main>
-        <div class="background">
-            <h1>Aria Strasser</h1>
-            <br>
-            <img src="img/aria_avatar.png" alt="aria strasser"></img>
-            <br>
-            <div>
-                <p id="intro">Hello! My name is Aria Strasser, and I am a GIMM major/Computer Science minor! I enjoy programming, playing games, 
-                and volunteering at BSU Esports.</p>
+    <div class="container">
+        <div class="section">
+            <div class="container card">  
+                <div class="section-content">
+                    <div class="crop-contents">
+                        <img src="img/astrasser/aria_avatar.png" alt="aria strasser" class="crop-contents"></img>
+                    </div>
+                </div>
+                <div class="section-content">
+                    <h1 id="name-text">Aria Strasser</h1>
+                    <p class="body-text">Hello! My name is Aria Strasser, and I am a GIMM major/Computer Science minor! I enjoy programming, playing games, 
+                    and volunteering at BSU Esports.</p>
+                </div>
             </div>
-            <br>
+        </div>
+
             <div>
                 <h2>Favorite Games</h2>
-                <p class="content">The games I have spent the most time on are Warframe and League of Legends. In Warframe I main
+                <p class="body-text">The games I have spent the most time on are Warframe and League of Legends. In Warframe I main
                 a burst character named Mirage, and in League I main quite a few characters in the support role (Rell, Thresh, and 
                 Seraphine are my top ones). I've been working on my Top and Mid roles in League as well, on Ahri, Malphite, and Cho'Gath.</p>
                 <br>
                 <h2>Reptiles</h2>
-                <p class="content">I also love reptiles! I have a snake named Tupigh and a grouchy bearded dragon named Chroma.</p>
+                <p class="body-text">I also love reptiles! I have a snake named Tupigh and a grouchy bearded dragon named Chroma.</p>
                 <br>
                 <h2>Other Hobbies</h2>
-                <p class="content">I also have quite a few hobbies I like to dabble in, like making silly videos from game clips, arranging 
+                <p class="body-text">I also have quite a few hobbies I like to dabble in, like making silly videos from game clips, arranging 
                 music, and drawing (I didn't draw my avatar picture though, that was done by a really talented friend of mine).</p>
-                <p>Here are some fun examples of edited videos I've done (These are some early quick versions, so they are still a work in progress)</p>
-                <div class="vid-container">
+                <p class="body-text">Here are some fun examples of edited videos I've done (These are some early quick versions, so they are still a work in progress)</p>
+                <div class="flex-container">
+                <span>
                     <iframe class="responsive-iframe" src="https://www.youtube.com/embed/DTZMfbiFTyQ" title="Well Played Mania" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="vid-container">
+                </span>
+                <span>
                     <iframe class="responsive-iframe" src="https://www.youtube.com/embed/zbEMu0v2XAU" title="EYE Divine Funny" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </span>
                 </div>
 
             </div>
