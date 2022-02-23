@@ -73,6 +73,18 @@
     font-family: var(--titillium);
     color:var(--lite);
 }
+/*MEMBERS PAGE*/
+.crop-contents:hover{
+    display: block;
+    color: var(--lite);
+}
+.hide{
+    display:none;
+}
+.expose:hover + .hide{
+    display:block;
+    color: var(--lite);
+}
 
 /* GENERAL */
 body {
@@ -98,13 +110,22 @@ h2 {
     flex-wrap:wrap;
 }
 
-.section {
+.section{
     margin: var(--std-margin);
     padding: var(--std-padding);
     display: inline-block;
 
     max-width: var(--std-section-max-width);
     min-width: var(--std-section-min-width);
+}
+
+.member-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+    padding-top:15em;
+
 }
 
 .card {
