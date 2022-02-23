@@ -58,6 +58,7 @@ body {
     margin-top: var(--nav-height);
     background-color: var(--base);
     color: var(--text-light);
+    min-width: 450px;
 }
 
 h2 {
