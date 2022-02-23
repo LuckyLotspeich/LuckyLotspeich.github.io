@@ -1,47 +1,5 @@
-/*  VARIABLES */
-:root {
-    /* colors */
-    --dark : #2C3531;
-    --blue : #116466;
-    --tanD : #D9B08C;
-    --tanL : #FFCB9A;
-    --lite : #D1E8E2;
+/*GENERAL*/
 
-    --text-light : var(--lite);
-    --text-dark : var(--base);
-
-    --base : var(--dark);
-    --card-base : var(--lite);
-    --border : var(--tanD);
-    --nav-base : var(--blue);
-    --nav-active : var(--lite);
-    --nav-hover : var(--tanD);
-
-    --grad : linear-gradient(var(--lite), var(--tanL));
-    
-    /* sizes */
-    --img-size : 170px;
-    --card-min-size : 100px;
-    --std-section-max-width : 30vw;
-    --std-section-min-width : 400px;
-    --std-body-text-max-width : 250px;
-
-    --border-radius : 10px;
-    --std-padding : 5px;
-    --std-margin : 5px;
-
-    --nav-height : 40px;
-    --nav-padding : 12px;
-
-    --nav-font-size : 1em;
-    --title-font-size : 2em;
-    --section-header-font-size : 1.15em;
-    --line-height : 1.4em;
-
-    /* fonts */
-    --audrey : 'audreybold', serif;
-    --titillium : 'titillium', sans-serif;
-}
 /*Work*/
 .project-img{
     border-radius: var(--border-radius);
@@ -60,13 +18,295 @@
     align-items: center;
     justify-content: center;
 }
-.card{
-    animation-name: cardAnimation;
-    animation-duration: 7s;
+/*ANIMATION*/
+#one{
+    animation-name: one;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
+    animation-delay:3s;
+}
+#two{
+    animation-name: two;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay:12s;
+}
+#three{
+    animation-name: three;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay:15s;
+}
+#four{
+    animation-name: four;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay:7s;
+}
+#five{
+    animation-name: five;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay:1s;
+}
+#six{
+    animation-name: six;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay:5s;
+}
+#seven{
+    animation-name: seven;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay:12s;
+}
+#eight{
+    animation-name: eight;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay:15s;
+}
+#nine{
+    animation-name: nine;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay:5s;
+}
+#ten{
+    animation-name: ten;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay:13s;
+}
+#eleven{
+    animation-name: eleven;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay:10s;
+}
+#twelve{
+    animation-name: twelve;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay:9s;
+}
+#thirteen{
+    animation-name: thirteen;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay:1s;
+}
+#fourteen{
+    animation-name: fourteen;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay:5s;
+}
+#fifteen{
+    animation-name: fifteen;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay:3s;
 }
 
-@keyframes cardAnimation {
+@keyframes one {
+    0% {
+        background-color:var(--lite);
+    }
+    33.5%{
+        background-color:var(--tanD)
+    }
+    67%{
+        background-color:var(--tanL);
+    }
+    100% {
+        background-color:var(--lite);
+    }
+}
+@keyframes two {
+    0% {
+        background-color:var(--lite);
+    }
+    33.5%{
+        background-color:var(--tanD)
+    }
+    67%{
+        background-color:var(--tanL);
+    }
+    100% {
+        background-color:var(--lite);
+    }
+}
+@keyframes three {
+    0% {
+        background-color:var(--lite);
+    }
+    33.5%{
+        background-color:var(--tanD)
+    }
+    67%{
+        background-color:var(--tanL);
+    }
+    100% {
+        background-color:var(--lite);
+    }
+}
+@keyframes four {
+    0% {
+        background-color:var(--lite);
+    }
+    33.5%{
+        background-color:var(--tanD)
+    }
+    67%{
+        background-color:var(--tanL);
+    }
+    100% {
+        background-color:var(--lite);
+    }
+}
+@keyframes five {
+    0% {
+        background-color:var(--lite);
+    }
+    33.5%{
+        background-color:var(--tanD)
+    }
+    67%{
+        background-color:var(--tanL);
+    }
+    100% {
+        background-color:var(--lite);
+    }
+}
+@keyframes six {
+    0% {
+        background-color:var(--lite);
+    }
+    33.5%{
+        background-color:var(--tanD)
+    }
+    67%{
+        background-color:var(--tanL);
+    }
+    100% {
+        background-color:var(--lite);
+    }
+}
+@keyframes seven {
+    0% {
+        background-color:var(--lite);
+    }
+    33.5%{
+        background-color:var(--tanD)
+    }
+    67%{
+        background-color:var(--tanL);
+    }
+    100% {
+        background-color:var(--lite);
+    }
+}
+@keyframes eight {
+    0% {
+        background-color:var(--lite);
+    }
+    33.5%{
+        background-color:var(--tanD)
+    }
+    67%{
+        background-color:var(--tanL);
+    }
+    100% {
+        background-color:var(--lite);
+    }
+}
+@keyframes nine {
+    0% {
+        background-color:var(--lite);
+    }
+    33.5%{
+        background-color:var(--tanD)
+    }
+    67%{
+        background-color:var(--tanL);
+    }
+    100% {
+        background-color:var(--lite);
+    }
+}
+@keyframes ten {
+    0% {
+        background-color:var(--lite);
+    }
+    33.5%{
+        background-color:var(--tanD)
+    }
+    67%{
+        background-color:var(--tanL);
+    }
+    100% {
+        background-color:var(--lite);
+    }
+}
+@keyframes eleven {
+    0% {
+        background-color:var(--lite);
+    }
+    33.5%{
+        background-color:var(--tanD)
+    }
+    67%{
+        background-color:var(--tanL);
+    }
+    100% {
+        background-color:var(--lite);
+    }
+}
+@keyframes twelve {
+    0% {
+        background-color:var(--lite);
+    }
+    33.5%{
+        background-color:var(--tanD)
+    }
+    67%{
+        background-color:var(--tanL);
+    }
+    100% {
+        background-color:var(--lite);
+    }
+}
+@keyframes thirteen {
+    0% {
+        background-color:var(--lite);
+    }
+    33.5%{
+        background-color:var(--tanD)
+    }
+    67%{
+        background-color:var(--tanL);
+    }
+    100% {
+        background-color:var(--lite);
+    }
+}
+@keyframes fourteen {
+    0% {
+        background-color:var(--lite);
+    }
+    33.5%{
+        background-color:var(--tanD)
+    }
+    67%{
+        background-color:var(--tanL);
+    }
+    100% {
+        background-color:var(--lite);
+    }
+}
+@keyframes fifteen {
     0% {
         background-color:var(--lite);
     }
