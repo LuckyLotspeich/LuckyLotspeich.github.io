@@ -52,6 +52,27 @@
     --audrey : 'audreybold', serif;
     --titillium : 'titillium', sans-serif;
 }
+/*HOME PAGE*/
+#home-body{
+    background-image:url("https://i.ibb.co/SK6hGjK/webiste-Background.png");
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+
+#team-name{
+    text-align: center;
+    margin:auto;
+    padding:20em;
+    font-family: var(--audrey);
+    color:var(--lite);
+}
+#team-description{
+    text-align:center;
+    margin:auto;
+    font-family: var(--titillium);
+    color:var(--lite);
+}
 
 /* GENERAL */
 body {
