@@ -1,5 +1,12 @@
 /*GENERAL*/
-
+#kaden-body-container{
+    display: flex;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    padding: auto;
+}
 /*Work*/
 .project-img{
     border-radius: var(--border-radius);
