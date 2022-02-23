@@ -166,3 +166,15 @@ h2 {
     margin-left: -50%;
     margin-right: -50%;
 }
+
+/* Iframe containers*/
+.flex-container {
+    flex-wrap: wrap;
+}
+
+iframe {
+    min-width:400px;
+    width:47vw;
+    height: calc(47vw * .55);
+    min-height: 240px;
+}
