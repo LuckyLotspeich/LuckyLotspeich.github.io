@@ -230,6 +230,19 @@ h2 {
     margin: var(--std-margin);
     font-size: var(--section-header-font-size);
 }
+h3 {
+    font-family: var(--titillium);
+    text-decoration: underline;
+    text-align: center;
+    padding: var(--std-padding);
+    margin: var(--std-margin);
+}
+ol {
+    font-family: var(--titillium);
+}
+ul {
+    font-family: var(--titillium);
+}
 
 .container {
     display:flex;
