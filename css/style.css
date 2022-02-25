@@ -349,3 +349,25 @@ iframe {
     height: calc(47vw * .55);
     min-height: 240px;
 }
+
+/* Aria CSS animation, can be deleted/moved to my CSS sheet later (here for the ID requirement) */
+#bouncy {
+  background-color: var(--blue);
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 20px;
+  box-shadow: 0 0 5px rgb(240,102,0);
+  object-fit: cover;
+  opacity: 0;
+}
+
+#bouncy-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  top: calc(50% - 100px);
+  left: 0;
+  overflow: visible;
+}
+
