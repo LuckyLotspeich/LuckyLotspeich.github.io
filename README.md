@@ -1,3 +1,3 @@
 ###### Website for GIMM 300
 
-[LuckyLotspeich.github.io](LuckyLotspeich.github.io)
+[luckylotspeich.github.io]https://luckylotspeich.github.io/index.html)
