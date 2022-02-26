@@ -53,6 +53,21 @@
     --audrey : 'audreybold', serif;
     --titillium : 'titillium', sans-serif;
 }
+
+/* Animations */
+@keyframes example-anim1 {
+    from {
+	    color:white;
+    }
+    50% {
+	    color:green;
+    }
+    to {
+	    color:white;
+    }
+}
+
+        
 /*HOME PAGE*/
 #home-body{
     background-image:url("https://i.ibb.co/SK6hGjK/webiste-Background.png");
