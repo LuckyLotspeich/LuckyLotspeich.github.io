@@ -266,7 +266,7 @@ ul {
     flex-wrap:wrap;
 }
 
-.section{
+div.section{
     margin: var(--std-margin);
     padding: var(--std-padding);
     display: inline-block;
