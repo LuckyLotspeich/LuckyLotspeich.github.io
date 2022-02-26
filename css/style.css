@@ -101,7 +101,6 @@
 #home-container{
     width:60%;
     text-align: center;
-    
 }
 #home-container div{
     margin:10px;
@@ -163,19 +162,19 @@ section{
     color: transparent;
     position: absolute;
     top: 0;
-  }
-  .scanlines {
+}
+.scanlines {
     overflow: hidden;
     mix-blend-mode: difference;
-  }
+}
   .glitch, .glow {
     color: #dfbfbf;
     position: relative;
     font-size: 9vw;
     animation: glitch 5s 5s infinite;
-  }
+}
   
-  .glitch::before, .glow::before {
+.glitch::before, .glow::before {
     content: attr(data-text);
     position: absolute;
     left: -2px;
@@ -184,9 +183,9 @@ section{
     overflow: hidden;
     top: 0;
     animation: noise-1 3s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
-  }
+}
   
-  .glitch::after, .glow::after {
+.glitch::after, .glow::after {
     content: attr(data-text);
     position: absolute;
     left: 2px;
@@ -195,9 +194,9 @@ section{
     overflow: hidden;
     top: 0;
     animation: noise-2 3s linear infinite alternate-reverse, glitch 5s 5s infinite;
-  }
+}
   
-  .scanlines::before {
+.scanlines::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -206,9 +205,9 @@ section{
     left: 0;
     background: repeating-linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, 0.05) 0.5%, transparent 1%);
     animation: fudge 7s ease-in-out alternate infinite;
-  }
+}
   
-  .subtitle {
+.subtitle {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
     font-size: 0.8vw;
@@ -236,6 +235,13 @@ a{
 }
 p{
     font-family: var(--titillium);
+}
+h1 {
+    font-family: var(--titillium);
+    text-align:center;
+    padding: var(--std-padding);
+    margin: var(--std-margin);
+    font-size: var(--section-header-font-size);
 }
 h2 {
     font-family: var(--titillium);
