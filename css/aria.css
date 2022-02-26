@@ -8,6 +8,13 @@
   animation-iteration-count: infinite;
   }
 
+  .card.section-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 
 @keyframes bounceIn{
   0%{
