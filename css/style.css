@@ -449,10 +449,7 @@ iframe {
     opacity: 0;
     margin: 20px;
 }
-#star-container-one {
-    opacity: 0;
-    margin: 20px;
-}
+
 .flex-parent-element {
   display: flex;
   width: 20%;
