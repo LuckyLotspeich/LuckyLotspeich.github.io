@@ -9,6 +9,7 @@
             font-family: "Times New Roman", Times, serif;
         }
     </style>
+    <script src="random.js"></script>
 </head>
 
 <body>
@@ -22,9 +23,23 @@
     </header>
     <main style="top:0; left:0;">
 
-    <!-- CSS Button -->
-    <button onclick="changeCSS()">Sample Text</button>
-    <!-- End CSS Button -->
+    <!-- CSS Change Button -->
+    <button id="cssButton" onclick="changeCSS()">Click for Color!</button>
+    <!-- End CSS Change Button -->
+
+    <br>
+
+    <!-- User Input Button -->
+    <h2>Rate our Website!</h2>
+    <button id="stars" onclick="makeStars()">Submit</button>
+    <div class="flex-parent-element">
+    <div id="star-container-one"><div id="one" class="star"></div></div>
+    <div class="star-container"><div id="two" class="star"></div></div>
+    <div class="star-container"><div id="three" class="star"></div></div>
+    <div class="star-container"><div id="four" class="star"></div></div>
+    <div class="star-container"><div id="five" class="star"></div></div>
+    </div>
+    <!-- End User Input Button -->
 
 </main>
 </body>
