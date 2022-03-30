@@ -9,7 +9,7 @@
             font-family: "Times New Roman", Times, serif;
         }
     </style>
-    <script src="random.js"></script>
+    <script src="js/random.js"></script>
 </head>
 
 <body>
@@ -44,6 +44,21 @@
     <div id="stars"></div>
     </div>
     <!-- End User Input Button -->
+
+    <!-- Text Box Feedback -->
+    <div>
+        <br>
+        <p>Count the vowels in the text you put in below!</p>
+        <textarea id="text"></textarea>
+        <button onclick="countVowels()" class="btn enter">Count</button>
+    </div>
+    <div id="vowelOutput"></div>
+    <!-- End of Text Box Feedback-->
+
+    <!-- HTML Update Button -->
+    <div id="rickDiv" style="max-width: 300px;"></div>
+    <button type="button" onclick="showRick()" id="btnID">click me!</button>
+    <!-- End of HTML Update Button-->
 
 </main>
 </body>
