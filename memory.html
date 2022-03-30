@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Memory Game</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <script src="memory.js" charset="utf-8"></script>
+
+    <style>
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            height: 300px;
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <header>
+        <div id="nav" class="container">
+            <a href="index.html">Home</a>
+            <a href="members.html">Members</a>
+            <a href="nick.html">Nick</a>
+            <a class="active" href="Memory.html">Memory Game</a>
+        </div>
+    </header>
+
+ <!-- game section -->
+    <h3>Score: <span id="result"></span></h3>
+    <div class="grid" style="margin: auto;"></div>
+    <div>
+        <p style="text-align: center;">
+            Click on the boxes and find the matching items!
+        </p>
+    </div>
+</body>
+</html>
